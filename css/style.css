@@ -1,0 +1,730 @@
+*{
+    box-sizing: border-box;     
+    background-size: 100vw 100vh;
+}
+/*Encabezado*/
+#encabezado nav{   
+    margin-left: 60px;
+/*  position: fixed;*/
+}
+/*Fin encabezado*/
+/*Menu horizontal*/
+.boton_nav{   
+    margin-right: 10px ;
+    border: 0;
+    font-size: 22px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;  
+}
+.boton_nav:hover:not(.active) {
+    font-weight: bold;
+    box-shadow: 0px 5px chocolate;   
+}
+h1{
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 50px;
+}
+.titulo{
+    width: 400px;
+    height: 50px;
+    margin-top: -1%;
+    margin-left: -1% ;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    font-size: 50px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    /*background: #eee linear-gradient(#F8FCFC, #f1f1f1 100%, white 100%);    */
+    background-color: transparent;
+    /*text-shadow: -1px 0 skyblue, 0 1px black, 1px 0 black, 0 -1px black;*/
+    color: white;
+    border: transparent;
+}
+body{
+    background-repeat: no-repeat;
+    /*background-image: url(/img/fondo-azul.jpg);*/
+    background-image: url(/img/fondo-azul.jpg);
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    background-color: white;
+}
+/*Principal*/
+.principal{
+    margin-top: 50px;
+    margin-left: 10%;
+    width: 80%;
+    height: 500px;
+    background-color: rgba(0,0,0,.3);
+    color: aliceblue;    
+}
+.principal img{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 400px;
+    height: 400px;
+    opacity: 0.8;
+}
+.principal p{
+    margin-top: -300px;
+    margin-left: 500px;
+}
+.principal h1{
+    margin-top: -350px;
+    margin-left: 470px;
+}
+/*Fin Principal*/
+/*Experiencia profesional*/
+.experiencia {
+    position: relative;
+    color: white;
+    text-align: center;    
+}
+.experiencia:hover:not(.active){
+    background-color: rgba(0,0,0,.3);
+}
+.experiencia p{
+    width: 250px;
+    height: 250px;
+    margin-left: 138px;
+    margin-top: 93px;
+    border-radius: 50px;
+    font-size: 15px;
+    text-align: center;    
+}
+.experiencia img{    
+    width: 250px;
+    height: 250px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 50px;
+}
+.img__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+.experiencia p{
+    text-align: center;
+}
+.experiencia:hover #fm.img__description{
+    margin-left: 172px;
+    box-shadow: 0px 6px 71px -4px rgba(150, 150, 150, 1), 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+    visibility: visible;
+    opacity: 0;
+}
+.experiencia:hover #ternium.img__description {
+    box-shadow: 0px 6px 71px -4px rgba(150, 150, 150, 1), 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+    margin-left: 542px;
+    visibility: visible;
+    opacity: 0;
+}
+.experiencia:hover #marini.img__description {
+    box-shadow: 0px 6px 71px -4px rgba(150, 150, 150, 1), 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+    margin-left: 912px;
+    visibility: visible;
+    opacity: 0;
+}
+.experiencia:hover #paktar.img__description {
+    box-shadow: 0px 6px 71px -4px rgba(150, 150, 150, 1), 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+    margin-left: 172px;
+    margin-top: 347px;
+    visibility: visible;
+    opacity: 0;
+}
+.experiencia:hover #calipso.img__description  {
+    box-shadow: 0px 6px 71px -4px rgba(150, 150, 150, 1), 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+    margin-left: 542px;
+    margin-top: 347px;    
+    visibility: visible;
+    opacity: 0;
+}
+.experiencia:hover #almundo.img__description  {
+    box-shadow: 0px 6px 71px -4px rgba(150, 150, 150, 1), 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+    margin-left: 912px;
+    margin-top: 347px;    
+    visibility: visible;
+    opacity: 0;
+}
+/*Fin Experiencia Profesional*/
+/*Aptitudes*/
+/*cursos*/
+#cursos_contenido h1,#contacto_contenido h1,#acerca_contenido h1,#experiencia_contenido h1{
+    margin-left: 0px;
+    width: 100%;
+    background-color:#FBFFFF;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/*contacto*/
+
+/**Contenedor*/
+.contenedor{
+    color: white;
+    text-align: center;
+}
+.contenedor #principal img{
+    margin-top: -400px;
+    border-radius:150px;
+    float: left;
+}
+.contenedor h1{
+    width: 40%;
+    margin-left: 30%;
+}
+.contenedor div:hover:not(.active){
+    background-color:#FBFFFF;
+    background-color: rgba(0,0,0,.3);
+}
+#formacion_contenido h1{
+    margin-left: 0px;
+    width: 100%;    
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/*Formacion Profesional*/
+#formacion_contenido img{
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+td{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    margin-left: 400px;
+}
+#formacion_contenido table{
+    margin-left: 100px;
+    margin-right: 200px;
+    padding-left: 130px;    
+}
+#formacion_contenido td{
+    border: 1px solid white;
+}
+/*Cursos*/
+.caja { 
+    width: 400px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: #ffffff; 
+    font-size: 18px;  
+    text-align: center; 
+    background: #889ccf; 
+    margin: 0 0 25px; 
+    overflow: hidden; 
+    padding: 15px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid #5878ca;
+}
+#cursos_contenido table{
+   margin: auto;
+}
+#cursos_contenido:hover:not(.active) .caja{    
+    padding: 25px; 
+    transform: rotateX(360deg);
+    transition: 1s;
+    /*background-color: #5878ca;*/
+    background: #eee linear-gradient(#5878ca, #f1f1f1 100%, #5878ca 70%);
+    font-size: 22px; 
+}
+/*Acerca contenido*/
+#acerca_contenido p{
+    margin-left: 150px;
+    margin-bottom: 150px;
+    margin-right: 150px;
+    font-size: 18px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    text-align: justify;
+}
+div #acerca_contenido {
+    height: 500px;
+}
+/*Formulario de contacto*/
+#contacto_contenido table{    
+    margin-left: 280px;
+    margin-top: -50px;
+}
+#contacto_contenido td h1{   
+    margin-top: -180px; 
+    margin-bottom: 0px;
+    margin-left: -55px;
+    width: 100%;
+    background-color: transparent;
+}
+#contacto_contenido td p{   
+    margin-left: 100px;
+    text-align: left;
+}
+#contacto_contenido img{   
+    float: left;
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 70px;
+    opacity: .8;
+    border-radius: 40px;
+}
+#contacto_contenido label{   
+    float: left;
+}
+form{
+    width: 500px;    
+    padding: 10px 20px;
+    margin-top: 20px;    
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;    
+}
+textarea{
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 400px;
+    max-width: 100%;
+}
+
+#boton{
+    background: #38384A;
+    color: #fff;
+    padding: 20px;
+    border: none;
+}
+#boton:hover{
+    color: black;
+    background-color: #D5DBDB;
+    cursor: pointer;
+}
+
+@media screen and (min-width:1024px) {
+    body{
+        background-color: green;
+    }
+}
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width:1023px) {
+ /*Globales*/
+ *{
+    box-sizing: border-box;     
+    background-size: 100vw 100vh;
+}
+body{
+    margin: auto;
+    background-repeat: no-repeat;
+    background-image: url(/img/fondo-azul.jpg);
+    background-size: cover;
+    background-attachment: fixed;       
+}
+.boton_nav{
+    margin: auto;
+    font-size: 20px;
+}
+h1{
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 35px;
+}
+/**/
+/*Principal*/
+.principal{
+    margin-top: 10px;
+    height: 250px;
+}
+#imagen{
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 200px;
+    height: 200px;
+}
+.principal p{
+    font-size: 11px;
+    margin-top: -150px;
+    margin-left: 250px;
+}
+.principal h1{
+   margin-top: -255px;
+   margin-left: 227px;
+}
+/*Fin Principal*/
+/*Experiencia*/
+#experiencia_contenido img{
+    width: 150px;
+    height: 150px;
+    margin-right: 25px;
+    margin-top: 10px;
+    margin-left: 20px;    
+    border-radius: 10px;
+}
+.img__description{
+    margin-left: 100px;
+}
+#experiencia_contenido p{
+    height: 150px;
+    width: 150px;
+    font-size: 9px;
+    border-radius: 10px;
+}
+.experiencia:hover #fm.img__description{
+    margin-left: 138px;
+    margin-top: 77px;
+    box-shadow: 0px 6px 71px -4px rgba(150, 150, 150, 1), 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+    visibility: visible;
+    opacity: 0;
+}
+.experiencia:hover #ternium.img__description {
+    margin-left: 333px;
+    margin-top: 77px;
+    box-shadow: 0px 6px 71px -4px rgba(150, 150, 150, 1), 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+    visibility: visible;
+    opacity: 0;
+}
+.experiencia:hover #marini.img__description {
+    margin-left: 528px;
+    margin-top: 77px;
+    box-shadow: 0px 6px 71px -4px rgba(150, 150, 150, 1), 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+    visibility: visible;
+    opacity: 0;
+}
+.experiencia:hover #paktar.img__description {
+    box-shadow: 0px 6px 71px -4px rgba(150, 150, 150, 1), 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+    margin-left: 138px;
+    margin-top: 241px;  
+    visibility: visible;
+    opacity: 0;
+}
+.experiencia:hover #calipso.img__description  {
+    box-shadow: 0px 6px 71px -4px rgba(150, 150, 150, 1), 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+    margin-left: 333px;
+    margin-top: 241px;  
+    visibility: visible;
+    opacity: 0;
+}
+.experiencia:hover #almundo.img__description  {
+    box-shadow: 0px 6px 71px -4px rgba(150, 150, 150, 1), 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+    margin-left: 528px;
+    margin-top: 241px;    
+    visibility: visible;
+    opacity: 0;
+}
+/*Fin Experiencia*/
+/*Formacion Academica*/
+div #formacion_contenido{
+    height: 300px;        
+}  
+#formacion_contenido table{        
+    width: 350px;
+    height: 150px;     
+    margin-top: -20px;
+    margin-left: 70px;
+    padding: 0px;     
+}
+#formacion_contenido table td{        
+    font-size: 10px;    
+    padding-left:0px;    
+    border: 1px solid white;
+}
+#formacion_contenido table td img{
+    width: 150px;
+    height: 150px;     
+    padding: auto;
+    margin-left: 30px;
+}
+/*Fin Experiencia*/
+/*Cursos*/
+.caja{
+        width: 300px;
+        height: 50px;
+        padding: 5px; 
+        font-size: 15px; 
+}
+#cursos_contenido:hover:not(.active) .caja{    
+    padding: 10px; 
+    transform: rotateX(360deg);
+    transition: 1s;
+    /*background-color: #5878ca;*/
+    background: #eee linear-gradient(#5878ca, #f1f1f1 100%, #5878ca 70%);
+    font-size: 20px; 
+    }
+/*Fin Cursos*/
+/*Acerca de mi*/
+div #acerca_contenido{
+    height: 250px;    
+}  
+#acerca_contenido p {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 13px;    
+    text-align:left;
+}
+/*Fin acerca*/
+/*Contacto*/
+div #contacto_contenido{
+    height: 400px;    
+}
+#contacto_contenido table{
+    margin-left: 0px;
+}
+#contacto_contenido td h1{   
+    margin-top: -180px; 
+    margin-bottom: 0px;
+    margin-left: -94px;
+    width: 100%;
+    background-color: transparent;
+}
+#contacto_contenido td p{   
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 5px;
+    text-align: left;
+}
+#contacto_contenido a img{           
+    width: 20px;
+    margin-top: -5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    opacity: .8;
+    border-radius: 40px;
+}
+#contacto_contenido td{           
+  width: 350px;
+}
+input, textarea{
+width: 100%;
+margin-bottom: 20px;
+padding: 3px;
+box-sizing: border-box;
+font-size: 12px;    
+}
+label{
+    font-size: 12px;
+    color: black;
+}
+form{
+    width: 180px;
+    margin-top: 30px;
+}
+textarea{
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 300px;
+    max-width: 100%;    
+}
+/**/
+}
+
+@media screen and (max-width:767px)  {  
+    /*Globales*/
+    *{
+        box-sizing: border-box;     
+        background-size: 100vw 100vh;
+    }
+    body{
+        margin: auto;
+        background-repeat: no-repeat;
+        background-image: url(/img/fondo-azul.jpg);
+        background-size: cover;
+        background-attachment: fixed;       
+    }
+    .boton_nav{
+        margin-left: -5px;
+        font-size: 12px;
+    }
+    h1{
+        font-family: 'Sofia Sans Extra Condensed', sans-serif;
+        font-size: 25px;
+    }
+    /**/
+    /*Principal*/
+    .principal{
+        margin-top: 10px;
+        height: 180px;
+    }
+    #imagen{
+        margin-top: 10px;
+        margin-left: 15px;
+        width: 150px;
+        height: 150px;
+    }
+    .principal p{
+        font-size: 8px;
+        margin-top: -150px;
+        margin-left: 175px;
+    }
+    /*Fin Principal*/
+    /*Experiencia*/
+    #experiencia_contenido img{
+        width: 75px;
+        height: 75px;
+        margin-right: 25px;
+        margin-top: 10px;
+        margin-left: 20px;    
+        border-radius: 10px;
+    }
+    .img__description{
+        margin-left: 100px;
+    }
+    #experiencia_contenido p{
+        height: 75px;
+        width: 75px;
+        font-size: 5px;
+        border-radius: 10px;
+    }
+    .experiencia:hover #fm.img__description{
+        margin-left: 20px;
+        margin-top: 58px;
+        box-shadow: 0px 6px 71px -4px rgba(150, 150, 150, 1), 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+        visibility: visible;
+        opacity: 0;
+    }
+    .experiencia:hover #ternium.img__description {
+        margin-left: 140px;
+        margin-top: 58px;
+        box-shadow: 0px 6px 71px -4px rgba(150, 150, 150, 1), 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+        visibility: visible;
+        opacity: 0;
+    }
+    .experiencia:hover #marini.img__description {
+        margin-left: 260px;
+        margin-top: 58px;
+        box-shadow: 0px 6px 71px -4px rgba(150, 150, 150, 1), 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+        visibility: visible;
+        opacity: 0;
+    }
+    .experiencia:hover #paktar.img__description {
+        box-shadow: 0px 6px 71px -4px rgba(150, 150, 150, 1), 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+        margin-left: 20px;
+        margin-top: 147px;
+        visibility: visible;
+        opacity: 0;
+    }
+    .experiencia:hover #calipso.img__description  {
+        box-shadow: 0px 6px 71px -4px rgba(150, 150, 150, 1), 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+        margin-left: 140px;
+        margin-top: 147px;  
+        visibility: visible;
+        opacity: 0;
+    }
+    .experiencia:hover #almundo.img__description  {
+        box-shadow: 0px 6px 71px -4px rgba(150, 150, 150, 1), 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+        margin-left: 260px;
+        margin-top: 147px;    
+        visibility: visible;
+        opacity: 0;
+    }
+    /*Fin Experiencia*/
+    /*Formacion Academica*/
+    div #formacion_contenido{
+        height: 230px;        
+    }  
+    
+    #formacion_contenido table{        
+        width: 350px;
+        height: 150px;     
+        /*margin-left: 10px;   */
+        margin: auto;
+        padding: 0px;     
+    }
+    #formacion_contenido table td{        
+        font-size: 7px;
+        width: 10px;
+        height: 5px;        
+        padding-left:0px;
+        border: 1px solid white;
+    }
+    #formacion_contenido table td img{
+        width: 70px;
+        height: 70px;     
+        padding: auto;
+        margin: auto;
+        border: 0px;
+    }
+
+    /*Fin Experiencia*/
+    /*Cursos*/
+    .caja{
+            width: 150px;
+            height: 50px;
+            padding: 5px; 
+            font-size: 8px; 
+    }
+    #cursos_contenido:hover:not(.active) .caja{    
+        padding: 10px; 
+        transform: rotateX(360deg);
+        transition: 1s;
+        /*background-color: #5878ca;*/
+        background: #eee linear-gradient(#5878ca, #f1f1f1 100%, #5878ca 70%);
+        font-size: 10px; 
+        }
+    /*Fin Cursos*/
+    /*Acerca de mi*/
+    div #acerca_contenido{
+        height: 180px;    
+    }  
+    #acerca_contenido p {
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 8px;    
+        text-align:left;
+    }
+    /*Fin acerca*/
+    /*Contacto*/
+    div #contacto_contenido{
+        height: 400px;    
+    }
+    #contacto_contenido table{
+        margin-left: 0px;
+    }
+    #contacto_contenido td h1{   
+        margin-top: -180px; 
+        margin-bottom: 0px;
+        margin-left: -40px;
+        width: 100%;
+        background-color: transparent;
+    }
+    #contacto_contenido td p{   
+        font-size: 10px;
+        margin-top: 5px;
+        margin-left: -10px;
+        text-align: left;
+    }
+    #contacto_contenido a img{           
+        width: 20px;
+        margin-top: -5px;
+        margin-right: 10px;
+        margin-left: 10px;
+        opacity: .8;
+        border-radius: 40px;
+    }
+    input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 3px;
+    box-sizing: border-box;
+    font-size: 10px;    
+    }
+    label{
+        font-size: 10px;
+        color: black;
+    }
+    form{
+        width: 180px;
+        margin-top: 30px;
+    }
+    textarea{
+        min-height: 100px;
+        max-height: 100px;
+        min-width: 300px;
+        max-width: 100%;    
+    }
+   /**/
+}
